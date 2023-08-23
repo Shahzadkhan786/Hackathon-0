@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Sidebar = () => {
   return (
-    <div className={cn("pb-12 w-2/12")}>
+    <div className={cn("pb-12 w-3/12")}>
     <div className="space-y-4 py-4">
       <div className="px-3 py-2">
         <h2 className="mb-2 px-4 text-xl font-semibold tracking-tight">

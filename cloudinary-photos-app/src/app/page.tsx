@@ -3,6 +3,7 @@ import { CldUploadButton } from 'next-cloudinary';
 import { CldImage } from 'next-cloudinary';
 import {useState} from "react"
 
+
 export type Uploadresult={
   info:{
     public_id:string;
@@ -22,13 +23,13 @@ export default function Home() {
         setImageId(uploadresult.info.public_id)
         console.log(result)
       }}
-      uploadPreset="vfj6rjl1" />      
+      uploadPreset="trejkl123" />      
  
      {imageId&&(
      <CldImage
       width="960"
       height="600"
-      src="imageId"
+      src={imageId}
       sizes="100vw"
       alt="Description of my image"
      />
