@@ -1,9 +1,8 @@
 
-import CloudinaryImage from '../gallery/cloudinary-image';
 import cloudinary from "cloudinary"
 import { SearchResult } from '../gallery/page';
-import { ForceRefresh } from '../components/forch-reresh';
-
+import { ForceRefresh } from '../components/webcomponents/forch-reresh';
+import FavouritesList from './favourites-list';
 
 export default async function  Favourites () {
     
@@ -23,19 +22,8 @@ export default async function  Favourites () {
           <h1 className='text-3xl font-bold'> Favourite Images </h1>
         </div>
         
-       <div className='grid grid-cols-4 gap-4'>
-        {results.resources.map ((result)=>(
-          <CloudinaryImage 
-          key={result.public_id}
-          path="/favourites"
-          imageData={result}
-          width={400}
-          height={400}
-          alt="image"
-          />
-        ))}
-       </div>
-       
+       <FavouritesList intialResources={results.resources} /> 
+
       </div>
     </div>
   )
