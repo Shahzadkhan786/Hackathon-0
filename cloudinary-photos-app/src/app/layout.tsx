@@ -24,19 +24,17 @@ export default function RootLayout({
             PHOTO GALLERY
             <div className="ml-auto flex items-center space-x-4 ">
             <Avatar>
-             <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+             <AvatarImage src="/images/avatar2.png" alt="@shadcn"/>
              <AvatarFallback>PG</AvatarFallback>
             </Avatar>
             </div>
           </div>
         </div>
-       <div className=''>
         <div className='flex'>
         <Sidebar />
         <div className='px-6 py-3 w-full'>
         {children}
         </div>
-       </div>
        </div>
       </body>
     </html>

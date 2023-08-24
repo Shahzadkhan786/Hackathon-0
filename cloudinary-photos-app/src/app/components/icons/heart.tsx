@@ -1,9 +1,11 @@
 import React from 'react'
+import {ComponentProps} from "react"
 
-export default function  Heart() {
+export default function  Heart(props:ComponentProps<"div">) {
   return (
-    <div>
+    <div {...props}>
         <svg 
+        
         xmlns="http://www.w3.org/2000/svg" 
         fill="none" 
         viewBox="0 0 24 24" 

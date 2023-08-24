@@ -14,7 +14,7 @@ const Sidebar = () => {
         </h2>
         <div className="space-y-1">
           <Link href="/gallery">
-          <Button variant="secondary" className="w-full justify-start gap-2">
+          <Button variant="ghost" className="w-full justify-start gap-2">
           <svg 
           xmlns="http://www.w3.org/2000/svg" 
           fill="none" 
@@ -41,10 +41,14 @@ const Sidebar = () => {
 
             Albums
           </Button>
+          
+          <Link href="/favourites">
           <Button variant="ghost" className="w-full justify-start gap-2">
             <Heart />
-            Favorite
+            Favourites
           </Button>
+          </Link>
+        
         </div>
       </div>
       </div>
