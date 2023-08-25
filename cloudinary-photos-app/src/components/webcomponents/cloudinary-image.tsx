@@ -19,7 +19,7 @@ export default function CloudinaryImage(props: {
     const {imageData,onUnheart} = props;
    
     
-    const [isFavourited,setIsFavourited]= useState(imageData.tags.includes("favorite"))
+    const [isFavourited,setIsFavourited]= useState(imageData.tags.includes("favourite"))
 
     return(
     <div className="relative">

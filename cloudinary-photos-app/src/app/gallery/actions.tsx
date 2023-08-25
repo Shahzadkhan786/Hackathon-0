@@ -4,13 +4,13 @@ import cloudinary from "cloudinary"
 
 export async function setAsFavouriteAction (
     publicId:string,
-    isFavorite:boolean,
+    isFavourite:boolean,
     )
     {
-        if (isFavorite) {       
-            await cloudinary.v2.uploader.add_tag("favorite",[publicId])
+        if (isFavourite) {       
+            await cloudinary.v2.uploader.add_tag("favourite",[publicId])
         } else {
-            await cloudinary.v2.uploader.remove_tag("favorite",[publicId])   
+            await cloudinary.v2.uploader.remove_tag("favourite",[publicId])   
         }
 
       } 

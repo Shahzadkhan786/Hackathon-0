@@ -30,7 +30,9 @@ import { Pencil } from "lucide-react"
               <AddToAlbumDialog image={image} onClose={()=>setOpen(false)}/>              
             </DropdownMenuItem> 
             <DropdownMenuItem asChild >              
-              <Link href={`/edit?publicId=${encodeURIComponent(image.public_id)}`}>
+              <Link href={`/edit?publicId=${encodeURIComponent(image.public_id)}`}
+              className="cursor-pointer flex justify-left pl-2 "
+              >
                <Pencil className="mr-2 w-4 h-4 ml-2"/>
                Edit  
               </Link>                                          

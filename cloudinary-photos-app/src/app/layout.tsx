@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Sidebar from '../components/webcomponents/sidebar'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +22,13 @@ export default function RootLayout({
       <body className={inter.className} >
         <div className="border-b ">
           <div className="flex h-16 items-center px-4 text-2xl font-bold">
-            PHOTO GALLERY
+            <Image 
+            src="/images/album.png"
+            alt="image"
+            height="60"
+            width="60"
+            /> 
+            ShahzadAKJ Photos
             <div className="ml-auto flex items-center space-x-4 ">
             <Avatar>
              <AvatarImage src="/images/avatar2.png" alt="@shadcn"/>

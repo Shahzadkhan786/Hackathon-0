@@ -7,7 +7,7 @@ import FavouritesList from './favourites-list';
 export default async function  Favourites () {
     
   const results= (await cloudinary.v2.search
-  .expression("resource_type:image AND tags=favorite")
+  .expression("resource_type:image AND tags=favourite")
   .sort_by('created_at','desc')
   .with_field("tags")
   .max_results(30)
