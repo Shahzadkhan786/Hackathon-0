@@ -1,8 +1,8 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Sidebar from './components/sidebar'
+import Sidebar from '../components/webcomponents/sidebar'
 
 const inter = Inter({ subsets: ['latin'] })
 

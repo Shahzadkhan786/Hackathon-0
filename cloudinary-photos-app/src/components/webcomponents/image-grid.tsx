@@ -1,5 +1,5 @@
 
-import {SearchResult} from "../../gallery/page"
+import {SearchResult} from "../../app/gallery/page"
 import { ReactNode } from "react";
 
 export function ImageGrid ({images,getImage}:{
@@ -16,7 +16,7 @@ export function ImageGrid ({images,getImage}:{
   }  
 
   return (
-    <div className='grid grid-cols-4 gap-4'>
+    <div className='grid lg:grid-cols-4 gap-4 sm:grid-cols-2 md:grid-cols-2 xs:grid-cols-1'>
 
         {[
           getColumns(0),

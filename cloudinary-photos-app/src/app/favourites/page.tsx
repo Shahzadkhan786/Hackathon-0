@@ -1,7 +1,7 @@
 
 import cloudinary from "cloudinary"
 import { SearchResult } from '../gallery/page';
-import { ForceRefresh } from '../components/webcomponents/forch-reresh';
+import { ForceRefresh } from '../../components/webcomponents/force-reresh';
 import FavouritesList from './favourites-list';
 
 export default async function  Favourites () {

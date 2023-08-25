@@ -3,9 +3,9 @@
 import React, { useState, useTransition } from "react"
 import { CldImage, CldImageProps } from "next-cloudinary"
 import Heart from "../icons/heart"
-import {setAsFavouriteAction} from "../../gallery/actions"
+import {setAsFavouriteAction} from "../../app/gallery/actions"
 import { FullHeart } from "../icons/fullHeart"
-import { SearchResult } from "../../gallery/page"
+import { SearchResult } from "../../app/gallery/page"
 import { ImageMenu } from "./imagemenu"
 
 
@@ -44,7 +44,7 @@ export default function CloudinaryImage(props: {
             })
         }}/>
         }
-      <ImageMenu />  
+      <ImageMenu image={imageData}/>  
     </div>
     )
 }

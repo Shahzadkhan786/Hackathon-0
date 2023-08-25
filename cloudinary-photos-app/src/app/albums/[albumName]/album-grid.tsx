@@ -1,10 +1,11 @@
+
 "use client"
 
-import { ImageGrid } from '../../components/webcomponents/image-grid';
-import CloudinaryImage from '../../components/webcomponents/cloudinary-image';
-import { SearchResult } from './page';
+import { ImageGrid } from '@/components/webcomponents/image-grid';
+import CloudinaryImage from '@/components/webcomponents/cloudinary-image';
+import { SearchResult } from '@/app/gallery/page';
 
-export default function  GalleryGrid ({images}:{images:SearchResult[]}) {
+export default function  AlbumGrid ({images}:{images:SearchResult[]}) {
   
   return (
       <ImageGrid 
