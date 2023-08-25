@@ -34,7 +34,7 @@ export function AddToAlbumDialog({image,onClose}:{image:SearchResult; onClose: (
       <DialogTrigger>
         <div className="flex ">
          <Button variant="ghost">
-            <FolderPlus className=" h-6 w-6" />
+            <FolderPlus className="mr-1 h-6 w-6" />
             <span>Add To Album</span>  
          </Button>
         </div>         
