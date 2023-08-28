@@ -2,7 +2,7 @@
 import React from 'react'
 import { CldUploadButton } from 'next-cloudinary';
 import { Button } from '../../components/ui/button';
-import { Uploadresult } from '../page';
+import { SearchResult } from '../page';
 import { useRouter } from "next/navigation"
 
 export default function UploadButton () {
@@ -12,7 +12,7 @@ export default function UploadButton () {
        <CldUploadButton 
        
         onUpload={(result) => {
-        const uploadresult = result as Uploadresult;
+        const uploadresult = result as SearchResult;
         setTimeout(()=>{
           router.refresh() 
         },1000)
