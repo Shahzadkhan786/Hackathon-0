@@ -8,7 +8,7 @@ const nextConfig = {
         ignoreBuildErrors:true
     }, 
     cloudinary: {
-      cloud_name: "YOUR_CLOUD_NAME",
+      cloud_name: "dgmt0ksz6",
     },
 }
 
