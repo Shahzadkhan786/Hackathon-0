@@ -2,7 +2,7 @@
 
 module.exports = {
   images: {
-    domains: ['dgmt0ksz6.cloudinary.com'], // Add your Cloudinary domain here
+    domains: ['https://api.cloudinary.com/v1_1/dgmt0ksz6'], 
   },
   env: {
     CLOUDINARY_CLOUD_NAME: 'dgmt0ksz6',
