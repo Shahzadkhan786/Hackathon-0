@@ -88,7 +88,7 @@ export default function EditPage({
         width="1200"
         height="1400"
         alt="image"
-        blur
+        blur="800"
         />}
         {transformation === "pixelate" &&
         <CldImage 
@@ -96,7 +96,7 @@ export default function EditPage({
         width="1000"
         height="1200"
         alt="image"
-        className="pixelate"
+        pixelate
         
         />}
         {transformation === "grayscale" &&

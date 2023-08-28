@@ -21,14 +21,14 @@ export default function RootLayout({
     <html lang="en" className='dark p-4'>
       <body className={inter.className} >
         <div className="border-b ">
-          <div className="flex h-16 items-center px-4 text-2xl font-bold">
+          <div className="flex h-16 items-center px-4 text-4xl font-bold">
             <Image 
             src="/images/album.png"
             alt="image"
             height="60"
             width="60"
             /> 
-            ShahzadAKJ Photos
+            ShahzadAKJ Photos Gallery
             <div className="ml-auto flex items-center space-x-4 ">
             <Avatar>
              <AvatarImage src="/images/avatar2.png" alt="@shadcn"/>

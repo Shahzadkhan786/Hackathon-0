@@ -1,39 +1,42 @@
-"use client"
-import { CldUploadButton } from 'next-cloudinary';
-import { CldImage } from 'next-cloudinary';
-import {useState} from "react"
+import GalleryGrid from '@/app/gallery/gallery-grid';
+import { SearchForm } from '@/app/gallery/search-form';
+import UploadButton from '@/app/gallery/uploadbutton';
+import cloudinary from "cloudinary"
 
 
-export type Uploadresult={
-  info:{
-    public_id:string;
-  }
-  event:"success";
+export type SearchResult={
+    public_id:string
+    tags:string[]
 }
-
-export default function Home() {
-    const [imageId, setImageId] = useState('');
-
+export default async function  GalleryPage (
+  {
+    searchParams: { search}} : {
+  searchParams:{
+   search:string;
+  },  
+}
+) {
+    
+  const results= (await cloudinary.v2.search
+  .expression(`resource_type:image${search ? ` AND tags=${search}` : ""}`)
+  .sort_by('created_at','desc')
+  .with_field("tags")
+  .max_results(30)
+  .execute()) as {resources:SearchResult[]};
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
- 
-      <CldUploadButton 
-      onUpload={(result) => {
-        const uploadresult = result as Uploadresult;
-        setImageId(uploadresult.info.public_id)
-        console.log(result)
-      }}
-      uploadPreset="trejkl123" />      
- 
-     {imageId&&(
-     <CldImage
-      width="960"
-      height="600"
-      src={imageId}
-      sizes="100vw"
-      alt="Description of my image"
-     />
-     )}
-    </main>
+    <div >
+      <div className='flex flex-col gap-8'>
+        <div className='flex justify-between p-2'>
+          <h1 className='text-5xl font-bold'> Gallery </h1>
+          <UploadButton />
+        </div>
+        
+        <SearchForm 
+        initialSearch={search}
+        />
+      <GalleryGrid images={results.resources}/> 
+      </div>
+    </div>
   )
 }
