@@ -12,7 +12,23 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        'xs':'505px',
+        // => @media (min-width: 505px) { ... }
+
+        'sm': '680px',
+        // => @media (min-width: 680px) { ... }
+  
+        'md': '797px',
+        // => @media (min-width: 797px) { ... }
+  
+        'lg': '930px',
+        // => @media (min-width: 930px) { ... }
+  
+        'xl': '1105px',
+        // => @media (min-width: 1105px) { ... }
+  
+        '2xl': '1375px',
+        // => @media (min-width: 1375px) { ... }
       },
     },
     extend: {

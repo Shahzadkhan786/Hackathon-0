@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en" className='dark p-4'>
       <body className={inter.className} >
         <div className="border-b ">
-          <div className="flex h-16 items-center px-4 text-4xl font-bold">
+          <div className="flex h-16 items-center px-4  text-2xl lg:text-5xl sm:text-3xl md:text-4xl font-bold">
             <Image 
             src="/images/album.png"
             alt="image"
@@ -31,10 +31,10 @@ export default function RootLayout({
             ShahzadAKJ Photos Gallery
             <div className="ml-auto flex items-center space-x-4 ">
             <Avatar>
-             <AvatarImage src="/images/avatar2.png" alt="@shadcn"/>
+             <AvatarImage src="/images/avatar2.png" alt="@sakjPG"/>
              <AvatarFallback>PG</AvatarFallback>
             </Avatar>
-            </div>
+          </div>
           </div>
         </div>
         <div className='flex'>

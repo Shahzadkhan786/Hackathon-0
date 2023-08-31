@@ -15,7 +15,7 @@ import Link from "next/link"
 
 export function AlbumCard({ folder }:{ folder: Folder}) {
   return (
-    <Card className="w-[350px]">
+    <Card className="w-[315px]">
       <CardHeader>
         <CardTitle>{folder.name}</CardTitle>
         <CardDescription>All your {folder.name} images.</CardDescription>

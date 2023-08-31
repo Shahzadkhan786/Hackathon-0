@@ -26,9 +26,9 @@ export default async function  GalleryPage (
   
   return (
     <div >
-      <div className='flex flex-col gap-8'>
-        <div className='flex justify-between p-2'>
-          <h1 className='text-5xl font-bold'> Gallery </h1>
+      <div className='flex lg:flex-col md:flex-col sm:flex-col gap-8'>
+        <div className='flex justify-between p-2  xs:flex-col sm:flex-row md:flex-row'>
+          <h1 className='text-2xl lg:text-5xl md:text-5xl sm:text-4xl font-bold '> Gallery </h1>
           <UploadButton />
         </div>
         

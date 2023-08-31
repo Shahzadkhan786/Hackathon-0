@@ -29,13 +29,14 @@ export default function EditPage({
     <div >
       <div className='flex flex-col gap-8'>
         <div className='flex justify-between p-2'>
-          <h1 className='text-5xl font-bold'> Edit {publicId} </h1>
+          <h1 className='text-5xl sm:text-2xl xs:flex-col font-bold'> Edit {publicId} </h1>
         </div>
         
-        <div className="flex gap-4">
+        <div className="grid xl:grid-cols-6 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 gap-4">
         <Button variant="ghost" onClick={() => setTransformation(undefined)}>
             Clear All
         </Button> 
+        
         <div className="flex flex-col gap-2">  
         <Button onClick={() => {
         setTransformation("generative-fill");
